@@ -1,27 +1,19 @@
-## Setup OpenShift
+## OpenShift Installation and Setup
 
-There are a few ways you can install and setup [OpenShift V3](http://www.openshift.org/)
+### Installation
 
-### Using Vagrant
+There are a few ways you can install and setup [OpenShift V3](http://www.openshift.org/):
 
-The easiest way to work with fabric8 and OpenShift is via the fabric8 vagrant image:
+* [Vagrant image](getStartedVagrant.html) - A prefactored Vagrant image of a all-in-one solution. This is the recommended way for a quick start
 
-* [Fabric8 Vagrant Image](getStartedVagrant.html)
+or 
 
-### Native Linux installation
+* [Native Linux installation](openShiftInstall.html) - Native installation on a Linux host
 
-If you are on Linux and want to install OpenShift without Vagrant then follow these instructions:
+### Setup
 
-* [Use the OpenShift Origin Installation documentation](http://docs.openshift.org/latest/getting_started/developers.html)
+In addition you need to configure OpenShift to work with Fabric8:
 
-Here are our additional [tips on installing OpenShift on Linux](openShiftInstall.html) from the release distro.
-
-#### Configure OpenShift
-
-Once you have an installation you will need to [configure OpenShift](openShiftConfigure.md) to add the necessary secrets and service accounts for running the [fabric8 applications](fabric8OnOpenShift.html)
-
-### Setup the OpenShift client on your local machine
-
-Whether you run OpenShift locally, remotely or via the [fabric8 vagrant box](getStartedVagrant.html) you'll need to:
-
-* [Setup the OpenShift clients on your local machine to work with Kubernetes and OpenShift](setupLocalHost.html)
+* [OpenShift configuration](openShiftConfigure.md) - Security, Router, Registry
+* [Fabric8 applications](fabric8OnOpenShift.html) - Fabric8 Console and much more
+* [Client setup](setupLocalHost.html) -  Setup the OpenShift clients on your local machine to work with OpenShift and Kubernetes
